@@ -1,0 +1,128 @@
+.products .product-item {
+  text-align: center;
+  background-color: #efefef;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex: 1;
+}
+
+.products .product-item .product-image {
+  width: 100%;
+  height: 100%;
+}
+
+.products .product-item img {
+  width: 100%;
+  transition: 0.3s ease-in-out all;
+}
+
+.products .product-item .img1:hover {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.products .product-item .product-image:hover .img2 {
+  visibility: visible;
+  opacity: 1;
+}
+
+.products .product-item .img2 {
+  display: flex;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.products .product-item .product-title {
+  font-size: 14px;
+  display: inline-block;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.products .product-item .product-star {
+  display: flex;
+  justify-content: center;
+  margin: 8px 0;
+  column-gap: 2px;
+}
+
+.products .product-item .product-star i {
+  font-size: 12px;
+  color: gold;
+}
+
+.products .product-item .product-prices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 8px;
+  padding-bottom: 15px;
+}
+
+.products .product-item .product-prices .new-price {
+  color: #ff3c20;
+  font-weight: 500;
+}
+.products .product-item .product-prices .old-price {
+  columns: #7d7d7d;
+  font-size: 12px;
+  text-decoration: line-through;
+}
+
+.products .product-item .product-discount {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #ff3c20;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.products .product-item .product-links {
+  display: inline-flex;
+  flex-direction: column;
+  row-gap: 5px;
+  position: absolute;
+  left: 0;
+  top: 15px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease-out all;
+}
+
+.products .product-item:hover .product-links {
+  transform: translate(10px);
+  opacity: 1;
+  visibility: visible;
+}
+
+.products .product-item .product-links i {
+  color: #fff;
+  font-size: 14px;
+  display: flex;
+}
+
+.products .product-item .product-links button,
+.products .product-item .product-links a {
+  background-color: #000;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 4px;
+  transition: all ease 0.3s;
+}
+
+.products .product-item .product-links button:hover,
+.products .product-item .product-links a:hover {
+  opacity: 0.7;
+}
