@@ -97,6 +97,10 @@ input[type="number"]::-webkit-inner-spin-button {
   opacity: 1;
 }
 
+.img-fluid {
+  width: 100%;
+}
+
 /* !Base End */
 
 /* !Base Responsive Start */
