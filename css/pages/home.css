@@ -33,3 +33,11 @@
   flex-wrap: wrap;
 }
 /* ! Products End */
+/* ! Campaing Start */
+.campaings .campaings-wraper {
+  display: flex;
+  gap: 30px;
+  margin: 30px;
+  flex-wrap: wrap;
+}
+/* ! Campaing End */
