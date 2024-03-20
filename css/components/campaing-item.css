@@ -1,0 +1,39 @@
+.campaings .campaing-item {
+  padding: 70px 35px;
+  background-size: cover;
+  background-position: center;
+  flex: 1;
+  color: white;
+}
+
+.campaings .campaing-item .campaing-title {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.campaings .campaing-item .campaing-desc {
+  margin: 40px 0;
+  font-size: 14px;
+}
+
+.campaings-wraper:nth-child(1) .campaing-item:nth-child(1) {
+  background-image: url(../../img/campaigns/banner1.png);
+}
+.campaings-wraper:nth-child(1) .campaing-item:nth-child(2) {
+  background-image: url(../../img/campaigns/banner2.png);
+}
+.campaings-wraper:nth-child(2) .campaing-item:nth-child(1) {
+  background-image: url(../../img/campaigns/banner3.png);
+  flex: 5;
+}
+.campaings-wraper:nth-child(2) .campaing-item:nth-child(2) {
+  background-image: url(../../img/campaigns/banner4.png);
+  flex: 3;
+}
+
+@media (max-width: 768px) {
+  .campaings .campaing-item {
+    flex: unset !important;
+  }
+}
