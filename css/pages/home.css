@@ -61,3 +61,26 @@
   }
 }
 /* ! Blog Responsive Start */
+
+/*! Brands Start */
+.brands {
+  margin: 40px;
+}
+.brand-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border: 1px solid #dee0ea;
+  padding: 30px 10px;
+}
+
+.brand-list .brand-item {
+  opacity: 0.4;
+  transition: 0.5s ease opacity;
+}
+
+.brand-list .brand-item:hover {
+  opacity: 1;
+}
+
+/*! Brands End */
