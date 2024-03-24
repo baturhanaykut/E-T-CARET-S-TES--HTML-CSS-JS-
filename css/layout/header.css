@@ -127,6 +127,7 @@ header .menu-dropdown-wrapper {
   left: -30px;
   opacity: 0;
   visibility: hidden;
+  z-index: 1;
 }
 header .menu-dropdown-content {
   width: 220px;
