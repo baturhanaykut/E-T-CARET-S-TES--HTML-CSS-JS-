@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact</title>
+    <title>E-Commerce</title>
     <!--! Boostrap Icon CDN -->
     <link
       rel="stylesheet"
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <!--! Header start  -->
+    <!--! header start  -->
     <header>
       <div class="global-notification">
         <div class="container">
@@ -36,7 +36,7 @@
               <nav class="navigation">
                 <ul class="menu-list">
                   <li class="menu-list-item">
-                    <a class="menu-link" href="index.html"
+                    <a class="menu-link active" href="index.html"
                       >Home<i class="bi bi-chevron-down"></i
                     ></a>
                     <div class="menu-dropdown-wrapper">
@@ -174,7 +174,7 @@
                     <a class="menu-link" href="blog.html">Blog </a>
                   </li>
                   <li class="menu-list-item">
-                    <a class="menu-link active" href="contact.html">Contact </a>
+                    <a class="menu-link" href="contact.html">Contact </a>
                   </li>
                 </ul>
               </nav>
@@ -203,8 +203,9 @@
         </div>
       </div>
     </header>
-    <!--! Header end  -->
-    <!--! Modal search start -->
+    <!--! header end  -->
+
+    <!--! modal search start -->
     <div class="modal-search">
       <div class="modal-wraper">
         <h3 class="modal-title">Search for products</h3>
@@ -251,81 +252,115 @@
         <i class="bi bi-x-circle"></i>
       </div>
     </div>
-    <!--! Modal search end -->
-    <!--! Contact Start  -->
-    <section class="contact">
-      <div class="contact-top">
-        <div class="contact-map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12036.106594286985!2d29.022972046029093!3d41.04654632449886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab7d02727b61d%3A0x610428581d04560e!2zT3J0YWvDtnksIEJvxJ9hemnDp2kgS8O2cHLDvHPDvCwgMzQzNDcgQmXFn2lrdGHFny_EsHN0YW5idWw!5e0!3m2!1str!2str!4v1711308354317!5m2!1str!2str"
-            width="100%"
-            height="500"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-      </div>
-      <div class="contact-bottom">
-        <div class="container">
-          <div class="contact-titles">
-            <h4>Contact with us</h4>
-            <h2>Get In Touch</h2>
-            <p>
-              In hac habitasse platea dictumst. Pellentesque viverra sem nec
-              orci lacinia, in bibendum urna mollis. Quisque nunc lacus, varius
-              vel leo a, pretium lobortis metus. Vivamus consectetur consequat
-              justo.
-            </p>
-          </div>
-          <div class="contact-elements">
-            <form class="contact-form">
-              <div class="">
-                <label>Your Name <span>*</span></label>
-                <input type="text" required />
+    <!--! modal search end -->
+
+    <!--! Cart Start -->
+    <section class="cart-page">
+      <div class="container">
+        <div class="cart-page-wrapper">
+          <form class="cart-form">
+            <div class="free-progress-bar">
+              <p class="progress-bar-title">
+                Add <strong>$161.00</strong> to cart and get free shipping!
+              </p>
+              <div class="progress-bar">
+                <span class="progres"></span>
               </div>
-              <div class="">
-                <label>Your email <span>*</span></label>
-                <input type="email" required />
-              </div>
-              <div class="">
-                <label>Subject <span>*</span></label>
-                <input type="text" required />
-              </div>
-              <div class="">
-                <label>Your message <span>*</span></label>
-                <textarea></textarea>
-              </div>
-              <button class="btn btn-sm form-button">Send Meesage</button>
-            </form>
-            <div class="contact-info">
-              <div class="contact-info-item">
-                <div class="contact-info-texts">
-                  <strong>Clotya Store</strong>
-                  <p class="contact-street">
-                    Clotya Store Germany — 785 15h Street, Office 478/B Green
-                    Mall Berlin, De 81566
-                  </p>
-                  <a href="tel:Phone: +1 1234 567 88">Phone: +1 1234 567 88</a>
-                  <a href="mailto:contact@example.com"
-                    >Email: contact@example.com</a
-                  >
+            </div>
+            <div class="shop-table-wrapper">
+              <table class="shop-table">
+                <thead>
+                  <th class="product-thumbnail">&nbsp;</th>
+                  <th class="product-thumbnail">&nbsp;</th>
+                  <th class="product-name">Product</th>
+                  <th class="product-price">Price</th>
+                  <th class="product-quantity">Quantity</th>
+                  <th class="product-subtotal">Subtotal</th>
+                </thead>
+                <tbody class="cart-wrapper">
+                  <tr class="cart-item">
+                    <td></td>
+                    <td class="cart-image">
+                      <img src="img/products/product1/1.png" alt="" />
+                      <i class="bi bi-x delete-cart"></i>
+                    </td>
+                    <td>Analogue Resin Strap</td>
+                    <td>$108.00</td>
+                    <td class="product-quantity">1</td>
+                    <td class="product-subtotal">$108.00</td>
+                  </tr>
+                  <tr class="cart-item">
+                    <td></td>
+                    <td class="cart-image">
+                      <img src="img/products/product2/1.png" alt="" />
+                      <i class="bi bi-x delete-cart"></i>
+                    </td>
+                    <td>Analogue Resin Strap</td>
+                    <td>$108.00</td>
+                    <td class="product-quantity">1</td>
+                    <td class="product-subtotal">$108.00</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="actions-wrapper">
+                <div class="coupon">
+                  <input
+                    type="text"
+                    class="input-text"
+                    placeholder="Coupon Code"
+                  />
+                  <button class="btn">Apply Coupon</button>
+                </div>
+                <div class="update-cart">
+                  <button class="btn">Update Cart</button>
                 </div>
               </div>
-              <div class="contact-info-item">
-                <div class="contact-info-texts">
-                  <strong>Opening Hours</strong>
-                  <p class="contact-date">Monday - Friday : 9am - 5pm</p>
-                  <p>Weekend Closed</p>
-                </div>
+            </div>
+          </form>
+          <div class="cart-collaterals">
+            <div class="cart-totals">
+              <h2>Cart Totals</h2>
+              <table>
+                <tbody>
+                  <tr class="cart-subtotal">
+                    <th>Subtotal</th>
+                    <td>
+                      <span id="subtotal">$316.00</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Shipping</th>
+                    <td>
+                      <ul>
+                        <li>
+                          <label>
+                            Fast Cargo $15.00
+                            <input type="checkbox" />
+                          </label>
+                        </li>
+                        <li>
+                          <a href="#">Change Adress</a>
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Total</th>
+                    <td>
+                      <strong>$316.00</strong>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="checkout">
+                <button class="btn btn-lg">Proceed to checkout</button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!--! Contact End  -->
+    <!--! Cart End  -->
 
     <!--! Policy Start  -->
     <section class="policy">
@@ -363,6 +398,7 @@
       </div>
     </section>
     <!--! Policy End  -->
+
     <!--! Footer Star  -->
     <footer class="footer">
       <div class="subscribe-row">
