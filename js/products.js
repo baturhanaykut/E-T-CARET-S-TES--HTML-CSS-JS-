@@ -33,9 +33,20 @@ function addToCart() {
 }
 
 
+
+function productRoute() {
+  const productLink = document.getElementsByClassName("product-link");
+  Array.from(productLink).forEach((button) => {
+    button.addEventListener("click", function (e) {
+      e.preventDefault();
+      const id = e.target.dataset.id;
+      localStorage.setItem("productId", JSON.stringify(id));
+      window.location.href = "single-product.html";
+    })
+  })
+}
+
 function productsFunc() {
-
-
   const productsContainer = document.getElementById("product-list");
 
   let results = "";
@@ -79,8 +90,8 @@ function productsFunc() {
           <button>
             <i class="bi bi-heart-fill"></i>
           </button>
-          <a href="#">
-            <i class="bi bi-eye-fill"></i>
+          <a href="#" class="product-link" data-id=${item.id}>
+            <i class="bi bi-eye-fill" ></i>
           </a>
           <a href="#">
             <i class="bi bi-share-fill"></i>
@@ -93,6 +104,7 @@ function productsFunc() {
     addToCart();
   });
   product1();
+  productRoute();
 }
 
 export default productsFunc;

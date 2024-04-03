@@ -42,3 +42,20 @@ const config2 = {
 };
 
 productsContainer && new Glide(".product-carousel2", config2).mount();
+
+export function singleThumbs() {
+    const config3 = {
+        //type: "carousel",
+        perView: 5,
+        gap: 10,
+        /*   autoplay: 3000, */
+        bound: true,
+        breakpoints: {
+            992: {
+                perView: 3,
+            }
+        },
+    };
+
+    new Glide(".product-thumb", config3).mount();
+}
