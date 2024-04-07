@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <!--! Header start  -->
+    <!--! Header Start  -->
     <header>
       <div class="global-notification">
         <div class="container">
@@ -27,12 +27,12 @@
         <div class="container">
           <div class="header-wrapper">
             <div class="header-mobile">
-              <i class="bi bi-list"></i>
+              <i class="bi bi-list" id="btn-menu"></i>
             </div>
             <div class="header-left">
               <a href="index.html" class="logo">LOGO</a>
             </div>
-            <div class="header-center">
+            <div class="header-center" id="sidebar">
               <nav class="navigation">
                 <ul class="menu-list">
                   <li class="menu-list-item">
@@ -178,14 +178,14 @@
                   </li>
                 </ul>
               </nav>
-              <i class="bi-x-circle"></i>
+              <i class="bi-x-circle" id="close-sidebar"></i>
             </div>
             <div class="header-right">
               <div class="header-right-links">
                 <a class="header-account" href="account.html">
                   <i class="bi bi-person"></i>
                 </a>
-                <button class="toggle-button">
+                <button class="search-button">
                   <i class="bi bi-search"></i>
                 </button>
                 <a href="#">
@@ -203,10 +203,11 @@
         </div>
       </div>
     </header>
-    <!--! Header end  -->
-    <!--! Modal search start -->
+    <!--! Header End  -->
+
+    <!--! Modal Search Start -->
     <div class="modal-search">
-      <div class="modal-wraper">
+      <div class="modal-wrapper">
         <h3 class="modal-title">Search for products</h3>
         <p class="modal-text">
           Start typing to see products yu are looking for.
@@ -248,10 +249,11 @@
             </a>
           </div>
         </div>
-        <i class="bi bi-x-circle"></i>
+        <i class="bi bi-x-circle" id="close-search"></i>
       </div>
     </div>
-    <!--! Modal search end -->
+    <!--! Modal Search End -->
+
     <!--! Contact Start  -->
     <section class="contact">
       <div class="contact-top">
@@ -422,7 +424,7 @@
           <div class="footer-widgets">
             <div class="brand-info">
               <div class="footer-logo">
-                <a href="#" class="logo">LOGO</a>
+                <a href="index.html" class="logo">LOGO</a>
               </div>
               <div class="footer-desc">
                 <p>
@@ -550,5 +552,9 @@
       </div>
     </footer>
     <!--! Footer End  -->
+    <!--! Js Start  -->
+    <script src="js/main.js" type="module"></script>
+
+    <!--! Js End  -->
   </body>
 </html>
