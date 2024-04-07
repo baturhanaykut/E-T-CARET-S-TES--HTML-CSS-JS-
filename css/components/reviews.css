@@ -68,6 +68,9 @@
   border-right: 1px solid #dee0ea;
   margin-top: 5px;
 }
+.tab-panel-revies .comment-form-rating .star.active i {
+  color: gold;
+}
 .tab-panel-revies .comment-form-rating .stars a:hover i {
   color: gold;
 }
